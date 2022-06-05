@@ -30,7 +30,7 @@ class DetailScreen extends StatelessWidget {
                   fit: StackFit.expand,
                   children: <Widget>[
                     Image.asset(
-                      'assets/c.jpg',
+                      'assets/detail_bg.png',
                       fit: BoxFit.fill,
                     ),
                     Container(

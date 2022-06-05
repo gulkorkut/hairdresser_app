@@ -8,7 +8,7 @@ const stylistData = [
     'profession': 'For Wedding',
     'rating': '4.8',
     'rateAmount': '56',
-    'imgUrl': 'assets/profile2.png',
+    'imgUrl': 'assets/stylist1.png',
     'bgColor': Color(0xffFFF0EB),
   },
   {
