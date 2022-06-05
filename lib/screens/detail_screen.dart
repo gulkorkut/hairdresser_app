@@ -6,7 +6,7 @@ var serviceList = [
   {'title': 'Men\s Hair Cut', 'duration': 45, 'price': 30},
   {'title': 'Women\s Hair Cut', 'duration': 60, 'price': 50},
   {'title': 'Color & Blow Dry', 'duration': 90, 'price': 75},
-  {'title': 'Oil Treatment', 'duration': 30, 'price': 20},
+  {'title': 'Makeup', 'duration': 30, 'price': 20},
 ];
 
 class DetailScreen extends StatelessWidget {
@@ -24,7 +24,7 @@ class DetailScreen extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                height: MediaQuery.of(context).size.height / 3 + 20,
+                height: MediaQuery.of(context).size.height / 3 ,
                 width: MediaQuery.of(context).size.width,
                 child: Stack(
                   fit: StackFit.expand,
@@ -71,7 +71,7 @@ class DetailScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         SizedBox(
-                          height: 130,
+                          height:50 ,
                         ),
                         Text(
                           'Service List',
@@ -81,7 +81,7 @@ class DetailScreen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 30,
+                          height: 20,
                         ),
                         ServiceTile(serviceList[0]),
                         ServiceTile(serviceList[1]),
@@ -89,84 +89,7 @@ class DetailScreen extends StatelessWidget {
                         ServiceTile(serviceList[3]),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(20),
-                          child: Container(
-                            padding: EdgeInsets.all(20),
-                            width: MediaQuery.of(context).size.width,
-                            height: MediaQuery.of(context).size.height / 8,
-                            color: Color(0xff4E295B),
-                            child: Column(
-                              children: <Widget>[
-                                Row(
-                                  children: <Widget>[
-                                    Text(
-                                      'Angel Howard · ',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                    Text(
-                                      'Mar 9, 2020',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w300,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 30,
-                                    ),
-                                    Icon(
-                                      Icons.star,
-                                      color: Color(0xffFF8573),
-                                      size: 16,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Icon(
-                                      Icons.star,
-                                      color: Color(0xffFF8573),
-                                      size: 16,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Icon(
-                                      Icons.star,
-                                      color: Color(0xffFF8573),
-                                      size: 16,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Icon(
-                                      Icons.star,
-                                      color: Color(0xffFF8573),
-                                      size: 16,
-                                    ),
-                                    SizedBox(
-                                      width: 3,
-                                    ),
-                                    Icon(
-                                      Icons.star,
-                                      color: Color(0xffFF8573),
-                                      size: 16,
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  'Cameron is the best colorist and stylish I’ve ever met. He has an amazing talent! He is ver...',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w300,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+
                         )
                       ],
                     ),
